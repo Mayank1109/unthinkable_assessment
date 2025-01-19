@@ -21,8 +21,7 @@ app.use((req, res, next) => {
 
 const dashboard = require("./router/dashboard");
 app.use("/dashboard", dashboard);
-// app.use("/dashboard", dashboard);
-// app.use("/auth", authRoutes);
+
 
 app.use((error, req, res, next) => {
   const status = error.status || 500;
