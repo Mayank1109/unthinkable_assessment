@@ -1,3 +1,26 @@
+# Drag and Drop File Upload
+
+This is a simple React application that allows users to upload files using drag-and-drop or by selecting a file from their system. The app supports images and PDFs and extracts text from the uploaded files.
+
+## Features
+
+- **Drag-and-Drop**: Upload files by dragging them into the drop zone.
+- **File Selection**: Alternatively, select files directly from your system.
+- **Image Preview**: Supports previewing uploaded images (PNG/JPEG).
+- **Text Extraction**: Extracts text from images using OCR (Optical Character Recognition).
+- **PDF Text Parsing**: Extracts text from PDF documents (page by page).
+- **Progress Display**: Visual progress bar while uploading files.
+
+## Tech Stack
+
+- **React.js**: JavaScript library for building user interfaces.
+- **Tesseract.js**: A library for OCR (Optical Character Recognition) to extract text from images.
+- **pdf.js**: A library to parse and extract text from PDF files.
+- **Axios**: For making HTTP requests.
+- **Node.js**: Backend (if required for handling file uploads).
+- **CSS**: For styling the components.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
