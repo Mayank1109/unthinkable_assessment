@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: white, #f7f7f7;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  letter-spacing: 1px;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 88vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f6fa;
+  max-width: 968px;
+  margin-left: auto;
+  padding: 2rem;
+  margin-right: auto;
+}
+
+/* FILE UPLOAD */
+
+.dropzone {
+  width: 400px;
+  height: 400px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.uploads {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 5px; */
+
+  background-color: #fafafa;
+  border: 2px dashed #5d4dcc;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.active {
+  background-color: #5f5959;
+}
+
+button {
+  background-color: #fafafa;
+  border: 1.5px solid #5d4dcc;
+  padding: 0.7rem;
+  margin: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #5d4dcc;
+  color: #fafafa;
+  transition: 0.3s all ease-in-out;
+}
+
+.list-item {
+  display: flex;
+  padding: 0;
+  margin: 8px 0;
+  min-width: 300px;
+  font-size: 22px;
+  background-color: #d4d2d2;
+  cursor: grab;
+  border-radius: 10px;
+}
+
+.list-item > h3 {
+  padding: 10px;
+  margin: 0;
+}
+
+.list-item > span {
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  border-right: 2px solid white;
+  padding: 10px;
+  padding-right: 16px;
+}
+
+.next-position {
+  border: 2px solid #34d44f;
+  opacity: 0.2;
+}
+
+.file-card {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid rgba(117, 96, 255, 0.281);
+  border-radius: 6px;
+  padding: 8px 15px;
+  justify-content: space-between;
+}
+
+.cancel {
+  padding: 0.2rem 0.2rem 0rem 0.15rem;
+  border-radius: 50%;
+}
+
+.grid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+}
